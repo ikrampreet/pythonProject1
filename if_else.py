@@ -1,3 +1,3 @@
 user = input('Enter your name:')
-if user == 'ikram':
-    print("you are great!")
+if user.lower() == 'ikram':
+    print(user.lower())
