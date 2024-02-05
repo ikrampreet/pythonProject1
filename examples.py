@@ -1,6 +1,15 @@
-while True:
-    user_input = float(input("Enter a number:"))
+sum_of_numbers = 0
 
-    if user_input < 0:
-        print("Negative number entered . stoping the program.")
-        break
+
+while True:
+    try:
+        num = float(input("Enter a number: "))
+
+
+        if num < 0:
+            break
+
+        sum_of_numbers += num
+    except ValueError:
+        print("Negative number")
+print("Sum of entered numbers:", sum_of_numbers)
